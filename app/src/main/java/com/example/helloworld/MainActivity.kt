@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         buttonColor.setOnClickListener {
             textView.setTextColor(Color.RED)
         }
+        // Revert this change to restore the default background color
         buttonBackground.setOnClickListener {
             findViewById<androidx.constraintlayout.widget.ConstraintLayout>(
                 R.id.main
