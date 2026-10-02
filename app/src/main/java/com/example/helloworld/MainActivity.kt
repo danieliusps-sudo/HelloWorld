@@ -14,13 +14,18 @@ class MainActivity : AppCompatActivity() {
         val textView = findViewById<TextView>(R.id.textView)
         val button = findViewById<Button>(R.id.button)
         val buttonColor = findViewById<Button>(R.id.buttonColor)
-
+        val buttonBackground = findViewById<Button>(R.id.buttonBackground)
         button.setOnClickListener {
             textView.setText(R.string.clicked_text)
         }
 
         buttonColor.setOnClickListener {
             textView.setTextColor(Color.RED)
+        }
+        buttonBackground.setOnClickListener {
+            findViewById<androidx.constraintlayout.widget.ConstraintLayout>(
+                R.id.main
+            ).setBackgroundColor(Color.YELLOW)
         }
     }
 }
