@@ -5,4 +5,5 @@
     <string name="button_text">Click Me</string>
     <string name="clicked_text">Button clicked!</string>
     <string name="change_color">Change Color</string>
+    <string name="change_background">Change Background</string>
 </resources>
